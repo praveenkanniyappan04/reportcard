@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(st11.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        width: 100%;
+        height: 463px;
+    }
+    .topic {
+        background-color: rgba(116, 126, 130, 0.211);
+        width: 31vw;
+        height: 43vh;
+        margin-top: 7vh;
+        margin-left: 50vw;
+        padding-top: 2vh;
+        padding-left: 2vw;
+        border-radius: 10px;
+    }
+    .topic1 {
+        display: flex;
+        align-items: center;
+    }
+    lable {
+        font-size: 1.4vw;
+        color: aliceblue;
+    }
+
+    input {
+        margin-left: 15px;
+        font-size: 1vw;
+        border-radius: 10px;
+        background-color: rgba(86, 89, 89, 0.058);
+        color: aliceblue;
+        padding: 2px;
+        outline: none;
+
+    }
+
+    button {
+        font-size: 1.2vw;
+        margin-top: 3vh;
+        margin-left: 12vw;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    .topic2 {
+        font-size: 2vw;
+        color: rgb(240, 213, 8);
+        margin-top: 7vh;
+        margin-left: 55vw;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .topic {
+            width: 52vw;
+            height: 40vh;
+            margin-top: 5vh;
+            margin-left: 45vw;
+            padding-top: 2vh;
+            padding-left: 2vw;
+        }
+        lable {
+            font-size: 2.8vw;
+            color: aliceblue;
+        }
+        input {
+            font-size: 2.5vw;
+            padding: 2px;
+            width: 35%;
+            outline: none;
+        }
+        button {
+            font-size: 2.2vw;
+            margin-left: 20vw;
+        }
+
+        .topic2 {
+            font-size: 3vw;
+            margin-top: 9vh;
+        }
+        .in1 {
+            margin-left: 5.6vw;
+        }
+        .in2{
+            margin-left: 4.3vw;
+        }
+        .in3{
+            margin-left: 5.5vw;
+        }
+        .in5{
+            margin-left: 5.5vw;
+        }
+        .in6{
+            margin-left: 0.7vw;
+        }
+        .in7{
+            margin-left: 3.7vw;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .topic {
+            width: 52vw;
+            height: 47vh;
+            margin-top: 5vh;
+            margin-left: 45vw;
+            padding-top: 2vh;
+            padding-left: 2vw;
+
+        }
+
+
+        lable {
+            font-size: 2.2vw;
+            color: aliceblue;
+        }
+
+        input {
+            font-size: 2.5vw;
+            padding: 2px;
+            width: 40%;
+            outline: none;
+
+        }
+
+        button {
+            font-size: 2.2vw;
+            margin-top: 3vh;
+            margin-left: 17vw;
+            padding: 4px;
+            border-radius: 6px;
+        }
+
+        .topic2 {
+            font-size: 3vw;
+            color: rgb(240, 213, 8);
+            margin-top: 5vh;
+            margin-left: 55vw;
+        }
+
+        .in1 {
+            margin-left: 5.5vw;
+        }
+
+        .in3 {
+            margin-left: 5.8vw;
+        }
+
+        .in4 {
+            margin-left: 3.5vw;
+        }
+
+        .in5 {
+            margin-left: 4.7vw;
+        }
+
+        .in6 {
+            margin-left: 2vw;
+        }
+    }
+</style>
+
+<body>
+    <p class="topic2">ENTER YOUR BIODATA</p>
+    <div class="topic">
+        <div class="topic1">
+            <lable style="padding-right: 4.6vw;">Enter your Name :</lable>
+            <input type="text" id="bio1" class="in1" required><br><br>
+        </div>
+        <div class="topic1">
+            <lable style="padding-right: 3.5vw;">Enter your Roll No :</lable>
+            <input type="text" id="bio2" class="in2" required><br><br>
+
+        </div>
+        <div class="topic1">
+            <lable style="padding-right: 4.9vw;">Enter your Class :</lable>
+            <input type="text" id="bio3" class="in3" required><br><br>
+        </div>
+        <div class="topic1">
+            <lable style="padding-right: 1.1vw;">Enter your FatherName :</lable>
+            <input type="text" id="bio4" class="in4" required><br><br>
+        </div>
+        <div class="topic1">
+            <lable style="padding-right: 5.1vw;">Enter your DOB :</lable>
+            <input type="date" id="bio5" class="in5" required><br><br>
+        </div>
+        <div class="topic1">
+            <lable style="padding-right:0.2vw;">Enter your Phonenumber :</lable>
+            <input type="text" id="bio6" class="in6" required><br><br>
+        </div>
+        <div class="topic1">
+            <lable style="padding-right: 3.5vw;">Enter your Emailid :</lable>
+            <input type="email" id="bio7" class="in7" required><br><br>
+        </div>
+
+
+        <button onclick="dat()">ENTER</button>
+    </div>
+    <script>
+        function dat() {
+            var d1 = document.getElementById("bio1").value;
+            var d2 = document.getElementById("bio2").value;
+            var d3 = document.getElementById("bio3").value;
+            var d4 = document.getElementById("bio4").value;
+            var d5 = document.getElementById("bio5").value;
+            var d6 = document.getElementById("bio6").value;
+            var d7 = document.getElementById("bio7").value;
+            if ((d1.length) > 1 && (d2.length) > 1 && (d3.length) > 1 && (d4.length) > 1 && (d5.length) > 1 && (d6.length) > 1 && (d6.length) > 1){
+            var t1 = localStorage.getItem("fine");
+            var t2 = JSON.parse(t1) || [];
+            t2.push({ ma1: d1, ma2: d2, ma3: d3, ma4: d4, ma5: d5, ma6: d6, ma7: d7 })
+            var t3 = JSON.stringify(t2);
+            localStorage.setItem("fine", t3);
+            var d1 = document.getElementById("bio1").value = "";
+            var d2 = document.getElementById("bio2").value = "";
+            var d3 = document.getElementById("bio3").value = "";
+            var d4 = document.getElementById("bio4").value = "";
+            var d5 = document.getElementById("bio5").value = "";
+            var d6 = document.getElementById("bio6").value = "";
+            var d7 = document.getElementById("bio7").value = "";
+            window.location.href="reportcard.html";
+        }
+        else{
+            alert("Enter the valid data");
+        }
+    }
+
+    </script>
+</body>
+
+</html>

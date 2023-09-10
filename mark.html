@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(st6.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 463px;
+            background-attachment: fixed;
+        }
+
+        .title {
+            background-color: rgba(63, 151, 180, 0.15);
+            width: 35vw;
+            height: 55vh;
+            margin-top: 7vh;
+            margin-left: 50vw;
+            padding-top: 2vh;
+            border-radius: 10px;
+
+        }
+
+        .title1 {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+        button {
+            margin: 5vh auto;
+            display: flex;
+            font-size: 1.5vw;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        input {
+            margin-left: 10px;
+            width: 45%;
+            font-size: 1vw;
+            padding-left: 5px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        lable {
+            font-size: 1.4rem;
+        }
+
+        .title2 {
+            font-size: 2vw;
+            margin-top: 15vh;
+            margin-left: 57vw;
+            color: rgb(247, 245, 245);
+        }
+
+
+        @media only screen and (max-width: 1024px) {
+            .title {
+                background-color: rgba(63, 151, 180, 0.15);
+                width: 55vw;
+                height: 60vh;
+                margin-top: 7vh;
+                margin-left: 45vw;
+                padding-top: 2vh;
+                border-radius: 10px;
+
+            }
+
+            .title1 {
+                display: flex;
+                align-items: center;
+                margin: 10px;
+            }
+
+            button {
+                margin: 5vh auto;
+                display: flex;
+                font-size: 2.3vw;
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            input {
+                margin-left: 10px;
+                width: 45%;
+                font-size: 2vw;
+                padding-left: 5px;
+                border-radius: 10px;
+
+            }
+
+            lable {
+                font-size: 2.3vw;
+            }
+
+            .title2 {
+                font-size: 2.5vw;
+                margin-top: 15vh;
+                margin-left: 60vw;
+                color: rgb(243, 241, 241);
+            }
+
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-image: url(st9.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 100%;
+                height: 463px;
+                background-attachment: fixed;
+            }
+
+
+            .title {
+                background-color: rgba(63, 151, 180, 0.15);
+                width: 60vw;
+                height: 55vh;
+                margin-top: 5vh;
+                margin-left: 20vw;
+                padding-top: 2vh;
+                border-radius: 10px;
+
+            }
+
+            button {
+                margin: 5vh auto;
+                display: flex;
+                font-size: 3.5vw;
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            input {
+                margin-left: 10px;
+                font-size: 3.5vw;
+
+            }
+
+            lable {
+                font-size: 3.5vw;
+            }
+
+            .title2 {
+                font-size: 3.5vw;
+                margin-top: 7vh;
+                margin-left: 30vw;
+                color: rgb(230, 229, 229);
+            }
+
+
+        }
+    </style>
+
+    <body>
+        <p class="title2">ENTER YOUR MARKS</p>
+        <div class="title">
+
+            <div class="title1">
+                <lable style="padding-right: 6.5vw;">Enter your Name :</lable>
+                <input type="text" id="val1" class="in1" required><br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 5.2vw;">Enter your Roll No :</lable>
+                <input type="text" id="val2" class="in1" required><br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 3vw;">Enter your Tamil mark :</lable>
+                <input type="text" id="val3" class="in1" required> <br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 1.5vw;">Enter your English mark :</lable>
+                <input type="text" id="val4" class="in1" required><br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 2.9vw;">Enter your Maths mark :</lable>
+                <input type="text" id="val5" class="in1" required><br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 1.9vw;">Enter your science mark :</lable>
+                <input type="text" id="val6" class="in1" required><br><br>
+            </div>
+
+            <div class="title1">
+                <lable style="padding-right: 3.2vw;">Enter your social mark :</lable>
+                <input type="text" id="val7" class="in1" required><br><br>
+            </div>
+            <button onclick="mark()">Submit</button>
+
+            <!-- <a href="bio.html" id="a"style="display: none;" onclick="alert('validation successfully')"><button>NEXT</button></a> -->
+        </div>
+
+        <script>
+            function mark() {
+                var data1 = document.getElementById("val1").value;
+                var data2 = document.getElementById("val2").value;
+                var data3 = document.getElementById("val3").value;
+                var data4 = document.getElementById("val4").value;
+                var data5 = document.getElementById("val5").value;
+                var data6 = document.getElementById("val6").value;
+                var data7 = document.getElementById("val7").value;
+                if ((data1.length) > 1 && (data2.length) > 1 && (data3.length) > 1 && (data4.length) > 1 && (data5.length) > 1 && (data6.length) > 1) {
+                    var sub = localStorage.getItem("details");
+                    var sub1 = JSON.parse(sub) || [];
+                    sub1.push({ m1: data1, m2: data2, m3: data3, m4: data4, m5: data5, m6: data6, m7: data7 })
+                    var sub2 = JSON.stringify(sub1);
+                    localStorage.setItem("details", sub2);
+                    document.getElementById("val1").value = "";
+                    var data2 = document.getElementById("val2").value = "";
+                    var data3 = document.getElementById("val3").value = "";
+                    var data4 = document.getElementById("val4").value = "";
+                    var data5 = document.getElementById("val5").value = "";
+                    var data6 = document.getElementById("val6").value = "";
+                    var data7 = document.getElementById("val7").value = "";
+                    window.location.href = "bio.html";
+                }
+                else{
+                    alert("Please enter the data");
+                }
+
+            }
+
+
+
+
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

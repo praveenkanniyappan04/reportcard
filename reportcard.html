@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(re4.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 463px;
+    }
+
+    .title {
+        margin-top: 6vh;
+        margin-left: 20vw;
+        color: coral;
+        font-size: 2vw;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .title1 {
+        background-color: rgba(136, 233, 233, 0.058);
+        width: 35vw;
+        height: 70vh;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 5px;
+
+    }
+
+    .lb {
+        font-size: 1.5vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 6vw;
+        padding: 1vw;
+    }
+
+    input {
+        width: 30%;
+        border-radius: 5vw;
+        font-size: 1vw;
+        background-color: none;
+        outline: none;
+        padding: 3px;
+    }
+
+    table {
+        font-size: 1.2vw;
+        padding: 10px;
+        border: 2px solid black;
+        margin-top: 3vh;
+        margin-left: 8vw;
+
+    }
+
+    table:tr {
+        border: 2px solid black;
+
+    }
+
+    th {
+        border: 2px solid black;
+        width: 50%;
+
+    }
+
+    td {
+        border: 2px solid black;
+        width: 50%;
+
+    }
+
+    button {
+        margin-top: 4vh;
+        margin-left: 15vw;
+        font-size: 1vw;
+        padding: 4px;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .title {
+            margin-top: 3vh;
+            margin-left: 20vw;
+            color: coral;
+            font-size: 3vw;
+        }
+
+        .title1 {
+            background-color: rgba(136, 233, 233, 0.058);
+            width: 50vw;
+            height: 80vh;
+            margin-top: 3vh;
+            margin-left: 10vw;
+            color: aliceblue;
+            border-radius: 10px;
+            padding: 5px;
+
+        }
+
+        .lb {
+            font-size: 2.8vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 6vw;
+            padding: 1vw;
+        }
+
+        input {
+            width: 30%;
+            border-radius: 5vw;
+            font-size: 2.3vw;
+            background-color: none;
+            outline: none;
+            padding: 3px;
+        }
+
+        table {
+            font-size: 2.9vw;
+            padding: 10px;
+            border: 2px solid black;
+            margin-top: 3vh;
+            margin-left: 6vw;
+
+        }
+
+        button {
+            margin-top: 4vh;
+            margin-left: 17vw;
+            font-size: 2.5vw;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 600px) {
+
+
+        body {
+            background-image: url(re5.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .title {
+            margin-top: 7vh;
+            margin-left: 30vw;
+            color: coral;
+            font-size: 4vw;
+        }
+
+        .title2 {
+            display: flex;
+        }
+
+
+        .title1 {
+            background-color: rgba(7, 89, 114, 0.058);
+            width: 55vw;
+            height: 50vh;
+            margin-top: 5vh;
+            margin-left: 25vw;
+            color: black;
+        }
+
+        .lb {
+            font-size: 3vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 6vw;
+            padding: 1vw;
+            color: rgb(246, 6, 6);
+        }
+
+        input {
+            width: 30%;
+            border-radius: 5vw;
+            font-size: 2vw;
+            background-color: none;
+            outline: none;
+            padding: 2px;
+        }
+
+        table {
+            font-size: 2.5vw;
+            padding: 10px;
+            border: 2px solid black;
+            margin-top: 3vh;
+            margin-left: 10vw;
+            color: black;
+
+        }
+
+        table:tr {
+            border: 2px solid black;
+
+        }
+
+        td {
+            color: blue;
+            font-style: bold;
+        }
+
+        th {
+            border: 2px solid black;
+
+        }
+
+        button {
+            margin-left: 17vw;
+            font-size: 2vw;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <p class="title">YOUR REPORT CARD</p>
+    <div class="title1">
+        <div class="title2">
+            <lable class="lb">Enter Your RollNO :</lable>
+            <input type="text" id="re1">
+        </div>
+        <div class="title3">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td id="mar1"></td>
+                </tr>
+                <tr>
+                    <th>RollNo</th>
+                    <td id="mar2"></td>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <td id="mar3"></td>
+                </tr>
+                <tr>
+                    <th>DOB</th>
+                    <td id="mar4"></td>
+                </tr>
+                <tr>
+                    <th>FatherName</th>
+                    <td id="mar5"></td>
+                </tr>
+                <tr>
+                    <th>Phonenumber</th>
+                    <td id="mar6"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td id="mar7"></td>
+                </tr>
+                <tr>
+                    <th>Tamil</th>
+                    <td id="mar8"></td>
+                </tr>
+                <tr>
+                    <th>English</th>
+                    <td id="mar9"></td>
+                </tr>
+                <tr>
+                    <th>Maths</th>
+                    <td id="mar10"></td>
+                </tr>
+                <tr>
+                    <th>Science</th>
+                    <td id="mar11"></td>
+                </tr>
+                <tr>
+                    <th>Social</th>
+                    <td id="mar12"></td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td id="mar13"></td>
+                </tr>
+                <tr>
+                    <th>Average</th>
+                    <td id="mar14"></td>
+                </tr>
+
+            </table>
+        </div>
+        <button onclick="card()">GETDATA</button>
+    </div>
+    <script>
+        function card() {
+            var card1 = document.getElementById("re1").value;
+            var c1 = localStorage.getItem("details");
+            var c2 = JSON.parse(c1);
+            var c3 = localStorage.getItem("fine");
+            var c4 = JSON.parse(c3);
+            for (var i in c2) {
+                if (card1 == c2[i].m2) {
+                    var Name = c2[i].m1;
+                    var RollNo = c2[i].m2;
+                    var Tamil = c2[i].m3;
+                    var English = c2[i].m4;
+                    var Maths = c2[i].m5;
+                    var Science = c2[i].m6;
+                    var Social = c2[i].m7;
+                    var Total = parseInt(Tamil) + parseInt(English) + parseInt(Maths) + parseInt(Science) + parseInt(Social);
+                    var Average = (Total / 500) * 100;
+                }
+            }
+            for (var j in c4) {
+                if (card1 == c4[j].ma2) {
+                    var name = c4[j].ma1;
+                    var roll = c4[j].ma2;
+                    var Class = c4[j].ma3;
+                    var DOB = c4[j].ma5;
+                    var FatherName = c4[j].ma4;
+                    var Phonenumber = c4[j].ma6;
+                    var Email = c4[j].ma7;
+                }
+            }
+            if (((card1 == RollNo) && (card1 == roll))&&((name == Name))) {
+                document.getElementById('mar1').innerHTML= Name;
+                document.getElementById('mar2').innerHTML = RollNo;
+                document.getElementById('mar3').innerHTML = Class;
+                document.getElementById('mar4').innerHTML = DOB;
+                document.getElementById('mar5').innerHTML = FatherName;
+                document.getElementById('mar6').innerHTML = Phonenumber;
+                document.getElementById('mar7').innerHTML = Email;
+                document.getElementById('mar8').innerHTML = Tamil;
+                document.getElementById('mar9').innerHTML = English;
+                document.getElementById('mar10').innerHTML = Maths;
+                document.getElementById('mar11').innerHTML = Science;
+                document.getElementById('mar12').innerHTML = Social;
+                document.getElementById('mar13').innerHTML = Total;
+                document.getElementById('mar14').innerHTML = Average;
+
+
+            }
+            else {
+                alert("check correct Name or Rollno");
+            }
+        }
+    </script>
+</body>
+
+</html>
